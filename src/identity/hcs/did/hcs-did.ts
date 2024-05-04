@@ -93,6 +93,8 @@ export class HcsDid {
             /**
              * Create topic
              */
+            this.network = this.client.ledgerId.toString();
+            
             const topicCreateTransaction = new TopicCreateTransaction()
                 .setMaxTransactionFee(HcsDid.TRANSACTION_FEE)
                 .setAdminKey(this.privateKey.publicKey)
@@ -104,7 +106,6 @@ export class HcsDid {
             const topicId = (await txId.getReceipt(this.client)).topicId;
 
             this.topicId = topicId;
-            this.network = this.client.ledgerId.toString();
             this.identifier = this.buildIdentifier(this.privateKey.publicKey);
         }
 
