@@ -1,5 +1,5 @@
 {
-    "name": "@hashgraph/did-sdk-js",
+    "name": "@hsuite/did-sdk-js",
     "version": "1.0.0",
     "engines": {
         "npm": ">=8.1.2",
