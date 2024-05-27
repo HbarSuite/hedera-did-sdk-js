@@ -1,6 +1,6 @@
 {
     "name": "@hsuite/did-sdk-js",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "npm": ">=8.1.2",
         "node": ">=16.13.1"
@@ -45,7 +45,7 @@
         "typescript": "^4.3.2"
     },
     "dependencies": {
-        "@hashgraph/sdk": "^2.44.0",
+        "@hashgraph/sdk": "^2.45.0",
         "base58-js": "^1.0.5",
         "did-resolver": "^3.1.5",
         "js-base64": "^3.7.5",
